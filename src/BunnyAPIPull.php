@@ -1,6 +1,6 @@
 <?php
 
-namespace vkrugovykh\BunnyCdn;
+namespace vkrugovykh\bunnycdn;
 
 class BunnyAPIPull extends BunnyAPI
 {

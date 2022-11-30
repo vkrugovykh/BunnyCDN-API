@@ -1,8 +1,8 @@
 <?php
 
-namespace vkrugovykh\BunnyCdn;
+namespace vkrugovykh\bunnycdn;
 
-use vkrugovykh\BunnyCdn\BunnyAPIException;
+use vkrugovykh\bunnycdn\BunnyAPIException;
 
 class BunnyAPI
 {
@@ -17,9 +17,24 @@ class BunnyAPI
     protected $connection;
     private array $data;
 
-    public function __construct()
+    public function __construct(?string $api_key, ?string $api_url, ?string $storage_api_url, ?string $host_name)
     {
         try {
+            if ($api_key) {
+                define("API_KEY", $api_key);
+            }
+
+            if ($api_url) {
+                define("API_URL", $api_url);
+            }
+            if ($storage_api_url) {
+                define("STORAGE_API_URL", $storage_api_url);
+            }
+
+            if ($host_name) {
+                define("HOSTNAME", $host_name);
+            }
+
             if (!$this->constApiKeySet()) {
                 throw new BunnyAPIException("You must provide an API key");
             }

@@ -1,13 +1,20 @@
 <?php
 
-namespace vkrugovykh\BunnyCdn;
+namespace vkrugovykh\bunnycdn;
 
 class BunnyAPIStorage extends BunnyAPI
 {
     protected string $storage_name;
 
-    public function zoneConnect(string $storage_name, string $access_key = ''): void
+    public function zoneConnect(string $storage_name, ?string $access_key, ?string $host_name, ?string $storage_api_url): void
     {
+        if ($host_name) {
+            define("HOSTNAME", $host_name);
+        }
+
+        if ($storage_api_url) {
+            define("STORAGE_API_URL", $storage_api_url);
+        }
         $this->storage_name = $storage_name;
         (empty($access_key)) ? $this->findStorageZoneAccessKey($storage_name) : $this->access_key = $access_key;
         $conn_id = ftp_connect((self::HOSTNAME));

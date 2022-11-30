@@ -6,19 +6,8 @@ BunnyCDN) pull, video streaming, DNS and storage zones [API](https://docs.bunny.
 This class whilst having a main focus on storage zone interaction includes pull zone features. Combining API with FTP,
 managing and using BunnyNet storage zones just got easier.
 
-[![Generic badge](https://img.shields.io/badge/version-1.9-blue.svg)]()
+[![Generic badge](https://img.shields.io/badge/version-1.0-blue.svg)]()
 [![Generic badge](https://img.shields.io/badge/PHP-8.1-purple.svg)]()
-
-### 1.9 changes
-* Updated project to have separate class files for each handler (Pull, Storage, Stream and DNS)
-* Added class `BunnyAPIPull` for pullzone interaction
-* Added class `BunnyAPIStorage` for storage interaction
-* Added class `BunnyAPIStream` for video stream interaction
-* Added class `BunnyAPIDNS` for DNS interaction
-
-### TODO
-* Sort (features) and index the readme
-* Create separate example files for each (pull, storage, video/stream and DNS)
 
 ### Requirements
 
