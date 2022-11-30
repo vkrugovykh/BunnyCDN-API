@@ -1,5 +1,5 @@
 {
-  "name": "vkrugovykh/bunny-cdn-api",
+  "name": "vkrugovykh/bunnycdn-api",
   "description": "Bunny.net CDN API class for handling pull zones, storage zones, video streaming and DNS.",
   "type": "library",
   "license": "MIT",
@@ -13,7 +13,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/vkrugovykh/BunnyCDN-API"
+      "url": "https://github.com/vkrugovykh/bunnycdn-api"
     }
   ],
   "require": {
