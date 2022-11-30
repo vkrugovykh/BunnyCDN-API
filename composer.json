@@ -1,19 +1,19 @@
 {
-  "name": "corbpie/bunny-cdn-api",
-  "description": "Bunny net CDN API class for handling pull zones, storage zones, video streaming and DNS.",
+  "name": "vkrugovykh/bunny-cdn-api",
+  "description": "Bunny.net CDN API class for handling pull zones, storage zones, video streaming and DNS.",
   "type": "library",
   "license": "MIT",
   "minimum-stability": "stable",
   "authors": [
     {
-      "name": "corbpie",
-      "email": "contact@corbpie.com"
+      "name": "vkrugovykh",
+      "email": "vkrugovykh84@mail.ru"
     }
   ],
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/cp6/BunnyCDN-API"
+      "url": "https://github.com/vkrugovykh/BunnyCDN-API"
     }
   ],
   "require": {
@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Corbpie\\BunnyCdn\\": "src/"
+      "vkrugovykh\\bunnycdn\\": "src/"
     }
   }
 }

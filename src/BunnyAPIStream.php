@@ -1,6 +1,6 @@
 <?php
 
-namespace Corbpie\BunnyCdn;
+namespace vkrugovykh\BunnyCdn;
 
 class BunnyAPIStream extends BunnyAPI
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Corbpie\BunnyCdn;
+namespace vkrugovykh\BunnyCdn;
 
-use Corbpie\BunnyCdn\BunnyAPIException;
+use vkrugovykh\BunnyCdn\BunnyAPIException;
 
 class BunnyAPI
 {

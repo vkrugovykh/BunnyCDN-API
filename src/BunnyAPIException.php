@@ -1,10 +1,10 @@
 <?php
 
-namespace Corbpie\BunnyCdn;
+namespace vkrugovykh\BunnyCdn;
 
 use Exception;
 
-class BunnyAPIException extends exception
+class BunnyAPIException extends Exception
 {
     public function errorMessage(): string
     {//Error message
